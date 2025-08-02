@@ -34,5 +34,5 @@ A fast-paced 2D space shooter where you fend off endless waves of enemies, rack 
 
 1. **Clone the repo**  
    ```bash
-   git clone https://github.com/<your-username>/Laser-Defender.git
+   git clone https://github.com/AnDayno/Laser_Defender_Unity2D.git
    cd Laser-Defender
