@@ -1,6 +1,7 @@
 # Laser Defender
 
-A fast-paced 2D space shooter where you fend off endless waves of enemies, rack up points, and try to survive as long as possible.
+A fast-paced 2D space shooter where you fend off endless waves of enemies, rack up points, and try to survive as long as possible.Built while following the [Complete C# Unity Game Developer 2D](https://www.gamedev.tv/courses/unity-complete-2d) course by GameDev.tv.
+
 
 ## 🎮 Concept
 - **Genre:** Space Shooter  
