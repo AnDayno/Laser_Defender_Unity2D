@@ -24,14 +24,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5968632106832952778}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4160759870131771530}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!212 &1325282788295036039
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 6447289154265257459}
   - component: {fileID: -570741538172398159}
   - component: {fileID: 750651686909382588}
+  - component: {fileID: -4103816138079462944}
   m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
@@ -179,12 +180,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.29533732, y: 0.41400358}
-      - {x: -0.2935071, y: 0.41957837}
-      - {x: -0.46857524, y: 0.1622012}
-      - {x: -0.24997379, y: -0.41721478}
-      - {x: 0.2504357, y: -0.41556385}
-      - {x: 0.4681995, y: 0.15957962}
+    - - {x: 0.24863651, y: 0.4178953}
+      - {x: -0.24291459, y: 0.41763252}
+      - {x: -0.4666294, y: -0.15692091}
+      - {x: -0.2966746, y: -0.41332304}
+      - {x: 0.29908237, y: -0.4233473}
+      - {x: 0.4681995, y: -0.15759666}
 --- !u!114 &-570741538172398159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,3 +212,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 10
+--- !u!114 &-4103816138079462944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7738297471682261151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52c71cb646dfdcc44b19e88217a137ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 5856420004230491296, guid: 735c4eeb115a48a4d8556e1b6f7c853e, type: 3}
+  projectileSpeed: 10
+  projectileLifetime: 5
+  baseFiringRate: 2
+  useAI: 1
+  firingRateVariance: 0.5
+  minFireRate: 0.5
+  isFiring: 0
