@@ -6,11 +6,7 @@ using UnityEngine;
 public class ScoreKeeper : MonoBehaviour
 {
     int currentScore = 0;
-    [SerializeField]TextMeshProUGUI playerScore;
-    void Update()
-    {
-        CurrentPlayerScore();
-    }
+
     public int GetCurrentScore()
     {
         return currentScore;
@@ -25,13 +21,5 @@ public class ScoreKeeper : MonoBehaviour
     public void ResetScore()
     {
         currentScore = 0;
-    }
-
-    void CurrentPlayerScore()
-    {
-        if (playerScore !=null)
-        {
-            playerScore.text = "Score:" + currentScore.ToString();
-        }
     }
 }
